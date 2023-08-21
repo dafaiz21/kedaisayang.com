@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+
+*{
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background-color: #010101;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(1,1,1,.8);
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.navbar .logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+.navbar .logo span{
+    color: red;
+}
+.navbar .navbar-nav a{
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin:0 1rem;
+}
+
+.navbar .navbar-nav a:hover,
+.footer .logo a i:hover{
+    color: #bbb;
+}
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: .5rem;
+    border-bottom: 0.1rem solid rgb(99, 28, 99);
+    transform: scaleX(0);
+    transition: .2s linear;
+}
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(1);
+}
+
+.navbar .navbar-extra a{
+    color: white;
+    margin: 0 .3rem;
+    font-size: 1.3rem;
+}
+.navbar .navbar-extra a:hover{
+    color: #bbb;
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+
+/* hero */
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img/fahmi-anwar-RcLUE4s1kXA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(0deg,
+    rgba(1,1,3,1)8%, rgba(255,255,255,0)55%);
+    bottom: 0;
+}
+
+.hero .content{
+    max-width: 60rem;
+    padding: 1.4rem 7%;
+}
+
+.hero .content h1{
+    font-size: 3.6rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(1,1,3,.5);
+}
+.hero .content h1 span{
+    color: red;
+}
+.hero .content p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(1,1,3,.5);
+}
+.hero .content .cta{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: black;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 3px rgba(1,1,3,.5);
+}
+
+.about,
+.menu,
+.contact{
+    padding: 10rem 7% 1.4rem;
+}
+.about h2,
+.menu h2,
+.contact-me h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.about h2 span,
+.menu h2 span,
+.contact-me h2 span{
+    color: red;
+}
+
+.about .row{
+    display: flex;
+}
+
+.about .row .about-img{
+    flex: 1 1 5rem;
+}
+
+.about .row .about-img img{
+    width: 30rem;
+    height: 30rem;
+}
+.about .row .content{
+    flex: 1 1 35rem;
+    padding:0 1rem;
+
+}
+.about .row .content h3{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.about .row .content p{
+    font-weight: 100px;
+    font-size: 1.3rem;
+    margin-bottom: 0.8;
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+/* menu */
+.menu .makanan{
+    display: flex;
+}
+.menu .makanan img{
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.contact .contact-me{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 150px;
+    background-color:rgba(255, 255, 255, 0.8);
+    width: 40rem;
+    border-radius: 2rem;
+}
+
+.contact .contact-me .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    width: 40rem;
+    backdrop-filter: blur(40px);
+    border-radius: 4px;
+}
+.contact .contact-me .form h3{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.contact .contact-me .form h3 span{
+    color: red;
+}
+.contact .contact-me .form input{
+    margin-bottom: .5rem;
+    height: 2rem;
+    border-radius: .1rem;
+    padding-left: 1rem;
+    width: 70%;
+    color: white;
+    background-color:rgb(0,0,0);
+    border-radius: .8rem;
+}
+.contact .contact-me .form textarea{
+    border-radius: .1rem;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    width: 70%;
+    border-radius: .8rem;
+    color: white;
+    background-color:rgb(0,0,0);
+}
+.contact .contact-me .form .btn{
+    margin-top: 1.5rem;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    position: relative;
+    left: -7rem;
+}
+.contact .contact-me .form .btn:hover{
+    background-color: #010101;
+    color: white;
+    transition: .7s;
+}
+
+.footer{
+    border-top:2px solid #fff;
+    margin-top: 2rem;
+    width: 100%;
+    margin: 2rem 0 0 0;
+    padding: 0;
+}
+.footer .logo,
+.footer .copyright{
+    text-align: center;
+    font-family: arial;
+    font-weight: 500;
+}
+.footer .logo i{
+    padding: 1rem 1rem;
+    color: white;
+}
+
+
+
+/* belum bisa */
+/* media query */
+
+
+/* laptop */
+@media (max-widht: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* tablet */
+@media (max-widht: 758px) {
+    html {
+        font-size: 62.5%;
+    } 
+
+
+    #hamburger-menu{
+        display: inline-block;
+    }
+
+
+    .about .row{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+/* handphone */
+@media (max-widht: 450px) {
+    html {
+        font-size: 55%;  
+    }
+}
