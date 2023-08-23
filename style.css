@@ -176,20 +176,24 @@ body{
 /* menu */
 .menu .makanan{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .menu .makanan img{
-    width: 20rem;
-    height: 20rem;
+    width: 300px;
+    height: 300px;
     padding: 1rem;
-    border-radius: 2rem;
+    border-radius: 50%;
+    margin: 1.5rem 1rem 0;
 }
 
+/* contact */
 .contact .contact-me{
     display: flex;
     justify-content: center;
     position: relative;
     left: 150px;
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(39, 37, 37, 0.8);
     width: 40rem;
     border-radius: 2rem;
 }
@@ -200,7 +204,6 @@ body{
     align-items: center;
     padding: 3rem;
     width: 40rem;
-    backdrop-filter: blur(40px);
     border-radius: 4px;
 }
 .contact .contact-me .form h3{
@@ -213,13 +216,14 @@ body{
 }
 .contact .contact-me .form input{
     margin-bottom: .5rem;
-    height: 2rem;
+    height: 3.2rem;
     border-radius: .1rem;
     padding-left: 1rem;
     width: 70%;
     color: white;
     background-color:rgb(0,0,0);
     border-radius: .8rem;
+    font-size: 1rem;
 }
 .contact .contact-me .form textarea{
     border-radius: .1rem;
@@ -240,7 +244,7 @@ body{
     left: -7rem;
 }
 .contact .contact-me .form .btn:hover{
-    background-color: #010101;
+    background-color: red;
     color: white;
     transition: .7s;
 }
