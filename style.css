@@ -132,14 +132,14 @@ body{
 }
 .about h2,
 .menu h2,
-.contact-me h2{
+.contact h2{
     text-align: center;
     font-size: 3rem;
     margin-bottom: 3rem;
 }
 .about h2 span,
 .menu h2 span,
-.contact-me h2 span{
+.contact h2 span{
     color: red;
 }
 
@@ -276,10 +276,12 @@ body{
     text-align: center;
     font-family: arial;
     font-weight: 500;
+    font-size: 1.8rem;
 }
 .footer .logo i{
     padding: 1rem 1rem;
     color: white;
+    font-size: 1.4rem;
 }
 
 
@@ -311,6 +313,13 @@ body{
         flex-wrap: wrap;
         
     }
+    .menu .makanan{
+        flex-wrap: wrap;
+    }
+    .navbar .navbar-nav a{
+        font-size: 120%;
+        margin: 0 10%;
+    }
 }
 
 
@@ -320,5 +329,17 @@ body{
 @media (max-width: 450px) {
     html {
         font-size: 55%;  
+    }
+    
+    .about .row{
+        flex-wrap: wrap;
+        
+    }
+    .menu .makanan{
+        flex-wrap: wrap;
+    }
+    .navbar .navbar-nav a{
+        font-size: 120%;
+        margin: 0 5%;
     }
 }
